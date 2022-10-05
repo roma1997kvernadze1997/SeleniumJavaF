@@ -1,0 +1,13 @@
+package tests;
+
+import java.util.ArrayList;
+
+public class Main {
+	  
+
+	  public static void main(String[] args) {
+
+		  int x,y,z;
+		  System.out.println(x);
+	  }
+	}

@@ -1,0 +1,17 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int number1 = 9;
+		double number2 = 9;
+		
+		
+		// TODO Auto-generated method stub
+		System.out.println("Hello World!");
+		System.out.println(number1);
+		System.out.println(number2);
+
+	}
+
+}

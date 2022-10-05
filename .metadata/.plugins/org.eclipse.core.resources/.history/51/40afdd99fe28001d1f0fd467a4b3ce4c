@@ -1,0 +1,35 @@
+package S2;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+
+
+class cars {
+	public void areCoool() {
+		System.out.println("BMW AUDI");
+	}
+}
+
+class bmw1 extends cars{
+	public void areCoool() {
+		System.out.println("SDASD");
+	}
+}
+
+class merc extends cars{
+	public void areCoool() {
+		System.out.println("NAAAAHHHH");
+	}
+}
+
+
+public class Test {
+	public static void main(String[] args) {
+
+		
+	}
+	
+	
+	
+}

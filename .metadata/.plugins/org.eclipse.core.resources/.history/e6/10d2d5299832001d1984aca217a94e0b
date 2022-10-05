@@ -1,0 +1,15 @@
+package tests;
+
+import java.util.ArrayList;
+
+public class Main {
+	  
+
+	  public static void main(String[] args) {
+
+		  int x,y,z;
+		  
+		  x=6;
+		  System.out.println(x);
+	  }
+	}

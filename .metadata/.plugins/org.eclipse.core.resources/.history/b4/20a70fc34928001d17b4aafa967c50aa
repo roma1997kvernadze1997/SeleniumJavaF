@@ -1,0 +1,30 @@
+package S2;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class Test {
+	
+	
+	
+	  public static void main(String[] args) {
+		  
+		  
+		  LinkedList<String> nn = new LinkedList<String>();
+		  nn.add("Roma");
+		  nn.add("Romas");
+		  nn.add("Roman");
+		  System.out.println(nn);
+		  System.out.println(nn.removeFirst());
+
+		
+	  }
+	}
+
+	
+	
+	
+	
+	
+
+  

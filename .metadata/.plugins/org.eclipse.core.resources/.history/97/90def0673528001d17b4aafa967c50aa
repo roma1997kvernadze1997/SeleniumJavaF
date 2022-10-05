@@ -1,0 +1,27 @@
+package S2;
+
+
+
+
+
+public class Test {
+	
+	enum Level {
+		LOW,
+		MEDIUM
+	}
+	
+	public static void main(String[] args) {
+		
+		Level nn = new Level.low;
+		
+		
+	}
+}
+
+	
+	
+	
+	
+	
+

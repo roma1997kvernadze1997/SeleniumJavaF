@@ -1,0 +1,36 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		char num1 = 19;
+		char num2 = 20;
+		
+		if(num1 > 999) {
+			System.out.println("It's OK!");
+		} else if (num2 == 21){
+			System.out.println("WRONG!");
+		} else {
+			System.out.println("WTF?");
+		}
+		
+		switch(num1) {
+		case 1:
+			System.out.println("hello");
+		break;
+		case 55:
+			System.out.println("WWW");
+			break;
+		case 19:
+			System.out.println("sssss");
+			break;
+		}
+		
+		
+		// TODO Auto-generated method stub
+		System.out.println("Hello World!");
+
+
+	}
+
+}

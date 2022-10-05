@@ -1,0 +1,19 @@
+package tests;
+
+import java.util.ArrayList;
+
+public class Main {
+	  
+
+	  public static void main(String[] args) {
+
+		  int[] dd = {56, 55, 66};
+		  int ff[] = {55, 655};
+		  int sum = 0;
+		  
+		  for(int i : ff) {
+			  sum = sum + i;
+			  System.out.println(sum);
+		  }
+	  }
+	}

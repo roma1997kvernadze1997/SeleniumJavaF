@@ -1,0 +1,31 @@
+package S2;
+
+import java.lang.reflect.Array;
+import java.net.MulticastSocket;
+import java.util.ArrayList;
+
+public class Test {
+	
+	
+	
+	  public static void main(String[] args) {
+
+		  ArrayList<String> cars = new ArrayList<String>();
+		  cars.add("BMW");
+		  cars.add("1BMW");
+		  cars.add("VOLVO");
+		  cars.set(0, null);
+		  cars.remove(0);
+		  cars.get(2);
+		  System.out.println(cars);
+		
+	  }
+	}
+
+	
+	
+	
+	
+	
+
+ 

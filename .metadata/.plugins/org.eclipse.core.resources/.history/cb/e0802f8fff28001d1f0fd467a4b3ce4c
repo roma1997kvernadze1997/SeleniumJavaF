@@ -1,0 +1,23 @@
+package S2;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+
+
+class name {
+	int x = 5;
+	class name2 {
+		int num = 6;
+	}
+}
+
+
+
+public class Test {
+	public static void main(String[] args) {
+		name inner = new name();
+		name.name2 outter = inner.new name2();
+		System.out.println(inner.x + " " + outter.num);
+	}
+}

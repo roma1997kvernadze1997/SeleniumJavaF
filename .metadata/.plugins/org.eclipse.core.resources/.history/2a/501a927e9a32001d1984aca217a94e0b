@@ -1,0 +1,17 @@
+package tests;
+
+import java.util.ArrayList;
+
+public class Main {
+	  
+
+	  public static void main(String[] args) {
+
+		  int[] dd = {56, 55, 66};
+		  int ff[] = {55, 655};
+		  
+		  for(int i=0; i<dd.length; i++) {
+			  System.out.println(i);
+		  }
+	  }
+	}

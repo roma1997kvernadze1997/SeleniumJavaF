@@ -1,0 +1,101 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+
+public class Methods {
+	
+	WebDriver driver;
+	
+	public Methods(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+
+    // Check title
+    public void getTitle() {
+    	
+    	String expectedTitle = "Google";
+        String actualTitle = "";
+        actualTitle = driver.getTitle();
+        System.out.println(actualTitle);
+        
+    	if (actualTitle.contentEquals(expectedTitle)) {
+          System.out.println("Test Passed!");
+        } else {
+          System.out.println("Test Failed");
+        }
+    	
+    }
+    
+    //Get text
+    public void getText() {
+    	String name = driver.findElement(By.xpath("//a[@data-hveid='CAIQAw']")).getText();
+        System.out.println(name);
+    }
+    
+    //Get text
+    public void getText2() {
+    	driver.findElement(By.partialLinkText("Creac")).click();
+  
+    }
+    
+    //Close browser
+    public void close() {
+    	driver.close();
+    }
+    
+    //SOME
+    public void some() {
+    	List<WebElement> links = driver.findElements(By.className("hdtb-mitem"));
+    	System.out.println(links.toString());
+
+	}
+    
+    
+    //API
+    public void readAllDetails() {
+    	
+    	Response response = RestAssured.get("https://jsonplaceholder.typicode.com/users");
+    	// store the response body in string
+    	String responseBody = response.getBody().asString();
+    	
+    	// print the response
+    	System.out.println("Response Body is =>  " + responseBody);
+  
+    	
+    	String username = response.jsonPath().getString("username");
+    	System.out.println(username);
+    	
+    	String usernames = response.jsonPath().getString("username[0]");
+    	System.out.println(usernames);
+    	
+    	List<String> jsonResponse = response.jsonPath().getList("username");
+    	System.out.println(jsonResponse.get(0));
+    	
+
+    	
+    	Map<String, String> company = response.jsonPath().getMap("company[1]");
+    	System.out.println(company.get("name"));
+    	List<Map<String, String>> companies = response.jsonPath().getList("company");
+    	System.out.println(companies.get(1).get("name"));
+    	
+    	// store the response code
+    	int responseStatusCode = response.getStatusCode();
+    	System.out.println("************************************************");
+    	System.out.println("Status Code => " + responseStatusCode);
+    	System.out.println(response.getTimeIn(TimeUnit.MILLISECONDS));
+    	
+    	Assert.assertEquals(responseStatusCode, 200);
+    }
+
+}

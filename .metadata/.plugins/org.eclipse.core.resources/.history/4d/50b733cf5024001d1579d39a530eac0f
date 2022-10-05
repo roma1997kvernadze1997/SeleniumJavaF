@@ -1,0 +1,19 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int n1 = 9;
+		double ss = 19.99;
+		boolean some = true;
+		double num = 19;
+		String name = "Roma";
+		
+		
+		// TODO Auto-generated method stub
+		System.out.println("Hello World!");
+		System.out.println(n1 + "" + some + num + name + ss);
+
+	}
+
+}

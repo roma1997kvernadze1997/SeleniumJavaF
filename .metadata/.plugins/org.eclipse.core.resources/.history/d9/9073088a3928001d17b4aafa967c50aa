@@ -1,0 +1,16 @@
+package S2;
+
+import java.util.ArrayList;
+
+public class Test {
+	
+	ArrayList<String> na = new ArrayList<String>();
+	
+}
+
+	
+	
+	
+	
+	
+

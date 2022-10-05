@@ -1,0 +1,22 @@
+package S2;
+
+
+class Test {
+	int x = 5;
+	
+	class test1 {
+		int y = 6;
+	}
+}
+
+public static void main(String[] args) {
+
+	
+}
+
+	
+	
+	
+	
+	
+

@@ -1,0 +1,26 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+
+		
+
+
+		
+
+
+		String[] names = {"roma", "mari"};
+		int[] numbers = {5, 56, 88};
+		
+		System.out.println(names[2]);
+
+		
+		
+		// TODO Auto-generated method stub
+		System.out.println("Hello World!");
+
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package S2;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+
+
+class name {
+	int x = 5;
+	class name2 {
+		int num = 6;
+	}
+}
+
+
+
+public class Test {
+	public static void main(String[] args) {
+		name nn = new name();
+		name.name2 nn2 = nn.new name2();
+		nn2.num;
+	}
+}

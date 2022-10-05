@@ -1,0 +1,28 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+
+		
+
+
+		
+
+		String[] cars1 = {"Volvo", "BMW", "Ford", "Mazda"};
+		System.out.println(cars1[0].toUpperCase());
+		
+		for(int cars1=0; cars1<5; cars1++) {
+			System.out.println(cars1);
+		}
+		
+
+		
+		
+		// TODO Auto-generated method stub
+		System.out.println("Hello World!");
+
+
+	}
+
+}

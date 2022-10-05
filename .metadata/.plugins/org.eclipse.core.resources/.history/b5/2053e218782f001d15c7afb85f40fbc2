@@ -1,0 +1,24 @@
+package tests;
+
+import java.util.ArrayList;
+
+public class Main {
+	  int x = 5;
+
+	  public static void main(String[] args) {
+	    Main myObj1 = new Main();  // Object 1
+	    Main myObj2 = new Main();  // Object 2
+	    myObj1.x = 33;
+	    System.out.println(myObj1.x);
+	    System.out.println(myObj2.x);
+	    
+	    ArrayList<String> names = new ArrayList<String>();
+	    names.add("Ola");
+	    names.add("ola2");
+	    names.add("Ola3");
+	    
+	    for(int i=0; i<=names.size(); i++) {
+	    	System.out.println(names.get(i));
+	    }
+	  }
+	}

@@ -1,0 +1,38 @@
+package S2;
+
+import java.util.ArrayList;
+
+public class Test {
+	
+	
+	
+	  public static void main(String[] args) {
+		  
+		  
+		  ArrayList<String> names = new ArrayList<String>();
+		  names.add("Roma2");
+		  names.add("Roma1");
+		  names.add("Roma3");
+		  System.out.println(names);
+		  
+		  for (int i=0; i<names.size(); i++) {
+			  System.out.println(names.get(i));
+		  }
+		  
+		  int[] numbers = {5, 6, 7};
+		  for(Integer i : numbers) {
+			  System.out.println(i);
+			  
+		  }
+
+		
+	  }
+	}
+
+	
+	
+	
+	
+	
+
+  

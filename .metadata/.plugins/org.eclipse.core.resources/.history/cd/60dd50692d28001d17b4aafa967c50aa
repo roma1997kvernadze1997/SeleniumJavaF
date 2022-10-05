@@ -1,0 +1,27 @@
+package S2;
+
+
+class testi {
+	int x = 5;
+	
+	class test1 {
+		int y = 6;
+	}
+}
+
+public class Test {
+	public static void main(String[] args) {
+		
+		testi outer = new testi();
+		testi.test1 inner = outer.new test1();
+		System.out.println(outer.x + "" + inner.y);
+		
+	}
+}
+
+	
+	
+	
+	
+	
+

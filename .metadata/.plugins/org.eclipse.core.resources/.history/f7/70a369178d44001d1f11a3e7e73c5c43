@@ -1,0 +1,99 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import org.testng.Assert;
+
+
+public class LoginPage {
+	
+	WebDriver driver;
+
+    //Open Browser
+    public void OpenURL() {
+    	
+    	System.setProperty("webdriver.chrome.driver","C:\\Users\\romak\\Chromedriver\\chromedriver.exe");
+        String baseUrl = "https://demoqa.com/login";
+        driver = new ChromeDriver();
+        driver.get(baseUrl);
+        driver.manage().window().maximize();
+    }
+    
+    //Close browser
+    public void close() {
+    	driver.close();
+    }
+    
+    //Enter U/P
+    public void userAuthentication(String username, String password) { 
+    	driver.findElement(By.xpath("//input[@id='userName']")).sendKeys(username);
+    	driver.findElement(By.xpath("//input[@id='password']")).sendKeys(password);
+    	clickLoginButton();
+    }
+    
+    //Login Button
+    public void clickLoginButton() {
+    	driver.findElement(By.xpath("//*[@id=\"login\"]")).click();
+    }
+    
+    
+    
+    
+    
+    //BookStore Button
+    public void clickBookeStore() {
+    	driver.findElement(By.id("gotoStore")).click();
+    }
+    
+    //Choose book from list
+    public void chooseBook() {
+    	driver.findElement(By.id("see-book-Git Pocket Guide")).click();
+    }
+    
+    //Add book to collection
+    public void addToCollection() {
+    	driver.findElement(By.id("addNewRecordButton")).click();
+    }
+    
+    //Delete Account Button
+    public void deleteAcc() {
+    	driver.findElement(By.className("text-center button")).click();
+    }
+    
+    //Delete All Books
+    public void deleteAllBooks() {
+    	driver.findElement(By.className("text-right button di")).click();
+    }
+    
+    //Confirm deleting book 
+    public void confirmDelete() {
+    	driver.findElement(By.id("closeSmallModal-ok")).click();
+    }
+    
+    
+    
+    
+    
+    
+    //Verify Deleted Book
+    public void verifyBookDeleted() {
+    	if(driver.getPageSource().contains("No rows found")) {
+    		System.out.println("Book is deleted!");
+    	}
+    	else {
+    		System.out.println("Book is NOT deleted!");
+    	}
+    }
+    
+    //Verify Added Book
+    public void verifyBookAdd() {
+    	String ExpectedTitle = "Richard E. Silverman";
+    	System.out.println(ExpectedTitle);
+    	String ActualTitle = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/div/div[3]")).getText();
+        System.out.println(ActualTitle);
+        Assert.assertNotEquals(ActualTitle, ExpectedTitle);
+    }
+}

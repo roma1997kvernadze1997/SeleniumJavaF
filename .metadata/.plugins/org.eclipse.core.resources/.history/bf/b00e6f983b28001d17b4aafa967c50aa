@@ -1,0 +1,29 @@
+package S2;
+
+import java.util.ArrayList;
+
+public class Test {
+	
+	
+	
+	  public static void main(String[] args) {
+		  
+		  ArrayList<String> cars = new ArrayList<String>();
+		  cars.add("Bmw");
+		  cars.add("Volvo");
+		  cars.add("Benz");
+		  cars.add("Opel");
+		  cars.
+		  System.out.println(cars.clear());
+
+		
+	  }
+	}
+
+	
+	
+	
+	
+	
+
+ 

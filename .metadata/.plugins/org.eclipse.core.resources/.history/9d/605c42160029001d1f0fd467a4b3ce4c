@@ -1,0 +1,25 @@
+package S2;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+
+
+
+
+
+
+public class Test {
+	public static void main(String[] args) {
+		LinkedList<String> cars = new LinkedList<String>();
+		cars.add("BMW");
+		cars.add("Benz");
+		cars.add("Audi");
+		
+		System.out.println(cars.removeLast());
+		
+		for(String i : cars) {
+			System.out.println(i);
+		}
+	}
+}
